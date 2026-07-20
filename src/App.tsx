@@ -18,7 +18,6 @@ import EnforcementInspector from "./components/EnforcementInspector.js";
 import CitizenPortal from "./components/CitizenPortal.js";
 import DataManagement from "./components/DataManagement.js";
 import AnalystCenter from "./components/AnalystCenter.js";
-import LoginModal from "./components/LoginModal.js";
 import MapSearch from "./components/MapSearch.js";
 import GisTelemetryHud from "./components/GisTelemetryHud.js";
 import DatabaseManager from "./components/DatabaseManager.js";
@@ -35,8 +34,13 @@ import {
 import { reverseGeocode } from "./lib/geoUtils.js";
 
 export default function App() {
-  // Session RBAC state
-  const [currentUser, setCurrentUser] = useState<User | null>(null);
+  // Session RBAC state - Default to admin user (no login required)
+  const [currentUser, setCurrentUser] = useState<User | null>({
+    id: "default-user",
+    name: "System Admin",
+    role: UserRole.ENFORCEMENT_OFFICER,
+    email: "admin@airtrace.local"
+  });
 
   // Loaded server datasets
   const [wards, setWards] = useState<Ward[]>([]);
@@ -457,12 +461,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-brand-bg flex flex-col font-sans text-brand-text selection:bg-brand-accent selection:text-white" id="main-application-frame">
-      {/* Session Guard */}
-      <AnimatePresence>
-        {!currentUser && (
-          <LoginModal onLoginSuccess={(user) => setCurrentUser(user)} />
-        )}
-      </AnimatePresence>
 
       {/* Top Navigation Banner */}
       <header className="bg-brand-panel text-brand-text px-5 py-3 border-b border-brand-border flex flex-col sm:flex-row justify-between items-center gap-3.5 shadow">
