@@ -602,6 +602,240 @@ export function recalculateMLOutputs() {
 
   // Ensure recommendations are sorted by priorityScore descending
   db.recommendations.sort((a,b) => b.priorityScore - a.priorityScore);
+
+  // Add additional enforcement cases for comprehensive queue demonstration
+  const additionalCases: EnforcementRecommendation[] = [
+    {
+      id: "rc-industrial-2026-07-19",
+      timestamp: new Date("2026-07-19T14:30:00Z").toISOString(),
+      wardId: "w-2",
+      priorityScore: 92,
+      priorityLevel: "critical",
+      reason: "Industrial unit emissions exceeding prescribed limits. PM2.5 levels at 245 µg/m³. Requires immediate inspection and compliance action.",
+      evidence: {
+        currentAqi: 387,
+        predictedAqi: 405,
+        trafficDensity: 0.78,
+        constructionSites: 2,
+        wasteBurningIncidents: 1,
+        sourceConfidence: 0.94
+      },
+      suggestedAction: "Issue stop work notice. Conduct stack emission test. Implement control measures within 48 hours.",
+      estimatedImpact: "high",
+      assignedOfficer: "Officer Priya Sharma",
+      status: "dispatched",
+      inspectedAt: new Date("2026-07-19T16:45:00Z").toISOString(),
+      inspectionNotes: "Site visited. Found non-functional ESP system. Owner ordered to repair within 24 hours. Follow-up scheduled."
+    },
+    {
+      id: "rc-construction-2026-07-18",
+      timestamp: new Date("2026-07-18T09:15:00Z").toISOString(),
+      wardId: "w-12",
+      priorityScore: 85,
+      priorityLevel: "high",
+      reason: "Large-scale construction without adequate dust control measures. Particulate matter elevated.",
+      evidence: {
+        currentAqi: 312,
+        predictedAqi: 328,
+        trafficDensity: 0.55,
+        constructionSites: 5,
+        wasteBurningIncidents: 0,
+        sourceConfidence: 0.88
+      },
+      suggestedAction: "Enforce dust mitigation measures. Require water spraying, site barriers, and equipment maintenance.",
+      estimatedImpact: "high",
+      assignedOfficer: "Officer Rajesh Kumar",
+      status: "resolved",
+      inspectedAt: new Date("2026-07-19T11:20:00Z").toISOString(),
+      inspectionNotes: "Contractor implemented water spraying system and erected barriers. AQI improved to 268. Case closed."
+    },
+    {
+      id: "rc-traffic-2026-07-17",
+      timestamp: new Date("2026-07-17T18:45:00Z").toISOString(),
+      wardId: "w-5",
+      priorityScore: 78,
+      priorityLevel: "high",
+      reason: "Peak hour traffic congestion in commercial zone. Vehicle emissions causing localized air quality degradation.",
+      evidence: {
+        currentAqi: 298,
+        predictedAqi: 315,
+        trafficDensity: 0.92,
+        constructionSites: 1,
+        wasteBurningIncidents: 0,
+        sourceConfidence: 0.81
+      },
+      suggestedAction: "Coordinate with traffic police for alternate routing. Implement odd-even vehicle scheme if needed.",
+      estimatedImpact: "medium",
+      assignedOfficer: "Officer Priya Sharma",
+      status: "pending",
+      inspectedAt: null,
+      inspectionNotes: null
+    },
+    {
+      id: "rc-waste-burning-2026-07-16",
+      timestamp: new Date("2026-07-16T06:30:00Z").toISOString(),
+      wardId: "w-8",
+      priorityScore: 88,
+      priorityLevel: "critical",
+      reason: "Multiple waste burning incidents detected in early morning hours. Spike of 156 µg/m³ PM2.5 recorded.",
+      evidence: {
+        currentAqi: 356,
+        predictedAqi: 378,
+        trafficDensity: 0.12,
+        constructionSites: 0,
+        wasteBurningIncidents: 4,
+        sourceConfidence: 0.96
+      },
+      suggestedAction: "Deploy field teams for immediate intervention. Issue FIR for unauthorized burning. Community awareness campaign.",
+      estimatedImpact: "critical",
+      assignedOfficer: "Officer Amit Singh",
+      status: "dispatched",
+      inspectedAt: new Date("2026-07-16T08:15:00Z").toISOString(),
+      inspectionNotes: "Field team deployed. Extinguished all burning sites. FIR filed against 3 property owners. Fines issued."
+    },
+    {
+      id: "rc-industry-noncompliant-2026-07-15",
+      timestamp: new Date("2026-07-15T10:00:00Z").toISOString(),
+      wardId: "w-3",
+      priorityScore: 81,
+      priorityLevel: "high",
+      reason: "Textile dyeing unit operating with expired emission control certificate. Continuous SO₂ emissions detected.",
+      evidence: {
+        currentAqi: 284,
+        predictedAqi: 301,
+        trafficDensity: 0.35,
+        constructionSites: 0,
+        wasteBurningIncidents: 0,
+        sourceConfidence: 0.92
+      },
+      suggestedAction: "Issue show cause notice. Mandate immediate compliance. Levy environmental penalty.",
+      estimatedImpact: "high",
+      assignedOfficer: "Officer Priya Sharma",
+      status: "resolved",
+      inspectedAt: new Date("2026-07-16T14:30:00Z").toISOString(),
+      inspectionNotes: "Unit owner renewed emission control certificate. Installed new scrubber system. Compliance achieved."
+    },
+    {
+      id: "rc-mining-dust-2026-07-14",
+      timestamp: new Date("2026-07-14T07:45:00Z").toISOString(),
+      wardId: "w-6",
+      priorityScore: 84,
+      priorityLevel: "high",
+      reason: "Mining aggregate operation without environmental clearance. Excessive dust generation affecting 2km radius.",
+      evidence: {
+        currentAqi: 325,
+        predictedAqi: 342,
+        trafficDensity: 0.28,
+        constructionSites: 0,
+        wasteBurningIncidents: 0,
+        sourceConfidence: 0.89
+      },
+      suggestedAction: "Issue closure notice. Demand environmental clearance. Levy non-compliance penalties.",
+      estimatedImpact: "high",
+      assignedOfficer: "Officer Rajesh Kumar",
+      status: "dismissed",
+      inspectedAt: new Date("2026-07-15T09:00:00Z").toISOString(),
+      inspectionNotes: "Site visited. Found operation already ceased. Operator stated clearance process underway. Monitoring continued."
+    },
+    {
+      id: "rc-hotel-kitchen-2026-07-13",
+      timestamp: new Date("2026-07-13T19:30:00Z").toISOString(),
+      wardId: "w-11",
+      priorityScore: 62,
+      priorityLevel: "medium",
+      reason: "High-rise hotel kitchen venting through non-compliant chimneys. Grease and odor emissions.",
+      evidence: {
+        currentAqi: 198,
+        predictedAqi: 212,
+        trafficDensity: 0.45,
+        constructionSites: 0,
+        wasteBurningIncidents: 0,
+        sourceConfidence: 0.75
+      },
+      suggestedAction: "Issue compliance notice. Require installation of approved pollution control device.",
+      estimatedImpact: "low",
+      assignedOfficer: null,
+      status: "pending",
+      inspectedAt: null,
+      inspectionNotes: null
+    },
+    {
+      id: "rc-vehicular-workshop-2026-07-12",
+      timestamp: new Date("2026-07-12T08:00:00Z").toISOString(),
+      wardId: "w-7",
+      priorityScore: 55,
+      priorityLevel: "medium",
+      reason: "Unauthorized automotive workshop causing VOC emissions. Illegal disposal of used oil.",
+      evidence: {
+        currentAqi: 176,
+        predictedAqi: 189,
+        trafficDensity: 0.62,
+        constructionSites: 1,
+        wasteBurningIncidents: 0,
+        sourceConfidence: 0.72
+      },
+      suggestedAction: "Issue warning notice. Mandate proper waste disposal. Schedule follow-up inspection.",
+      estimatedImpact: "low",
+      assignedOfficer: null,
+      status: "pending",
+      inspectedAt: null,
+      inspectionNotes: null
+    },
+    {
+      id: "rc-power-plant-2026-07-11",
+      timestamp: new Date("2026-07-11T15:20:00Z").toISOString(),
+      wardId: "w-1",
+      priorityScore: 91,
+      priorityLevel: "critical",
+      reason: "Diesel generator emissions exceeding safe limits. NO₂ concentration at 89 µg/m³. Emergency power generation detected.",
+      evidence: {
+        currentAqi: 398,
+        predictedAqi: 420,
+        trafficDensity: 0.38,
+        constructionSites: 0,
+        wasteBurningIncidents: 0,
+        sourceConfidence: 0.95
+      },
+      suggestedAction: "Order immediate load-shifting to grid power. Conduct stack test within 48 hours. Impose daily penalty until compliance.",
+      estimatedImpact: "critical",
+      assignedOfficer: "Officer Priya Sharma",
+      status: "dispatched",
+      inspectedAt: new Date("2026-07-12T10:30:00Z").toISOString(),
+      inspectionNotes: "Grid power restored. Generator emission test pending. Temporary solution in place. Monitoring continues."
+    },
+    {
+      id: "rc-biomass-burning-2026-07-10",
+      timestamp: new Date("2026-07-10T05:15:00Z").toISOString(),
+      wardId: "w-10",
+      priorityScore: 76,
+      priorityLevel: "high",
+      reason: "Paddy straw burning detected in agricultural area adjacent to urban zone. Massive smoke plume.",
+      evidence: {
+        currentAqi: 267,
+        predictedAqi: 289,
+        trafficDensity: 0.15,
+        constructionSites: 0,
+        wasteBurningIncidents: 6,
+        sourceConfidence: 0.91
+      },
+      suggestedAction: "Coordinate with agricultural department. Provide subsidy for alternative disposal methods. Issue challan.",
+      estimatedImpact: "high",
+      assignedOfficer: "Officer Amit Singh",
+      status: "resolved",
+      inspectedAt: new Date("2026-07-11T06:45:00Z").toISOString(),
+      inspectionNotes: "Farmers provided alternative biomass disposal support. Burning sites extinguished. Awareness program conducted."
+    }
+  ];
+
+  // Add additional cases to recommendations if not already present
+  additionalCases.forEach(newCase => {
+    if (!db.recommendations.find(r => r.id === newCase.id)) {
+      db.recommendations.push(newCase);
+    }
+  });
+
+  // Final sort by priority
+  db.recommendations.sort((a,b) => b.priorityScore - a.priorityScore);
 }
 
 // Global accessor to retrieve the in-memory/loaded database
