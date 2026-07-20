@@ -38,7 +38,8 @@ export default function App() {
   const [currentUser, setCurrentUser] = useState<User | null>({
     id: "default-user",
     name: "System Admin",
-    role: UserRole.ENFORCEMENT_OFFICER,
+    username: "admin",
+    role: UserRole.ADMINISTRATOR,
     email: "admin@airtrace.local"
   });
 
