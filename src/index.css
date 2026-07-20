@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-brand-bg: #0d0e12;
+  --color-brand-panel: #161a22;
+  --color-brand-border: #2a2f3a;
+  --color-brand-text: #e2e8f0;
+  --color-brand-muted: #94a3b8;
+  --color-brand-accent: #3b82f6;
+  --color-brand-danger: #ef4444;
+  --color-brand-warning: #f59e0b;
+  --color-brand-success: #10b981;
+}
+
+/* Base resets to reinforce the custom typography */
+body {
+  font-family: var(--font-sans);
+  background-color: #0d0e12;
+  color: #e2e8f0;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  letter-spacing: -0.025em;
+}
+
+/* Custom compact scrollbars for high-density UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0e12;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2f3a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Leaflet map customization to match dark high density theme */
+.leaflet-container {
+  background: #161a22 !important;
+  font-family: var(--font-sans) !important;
+}
+.leaflet-bar {
+  border: 1px solid #2a2f3a !important;
+  box-shadow: none !important;
+}
+.leaflet-bar a {
+  background-color: #161a22 !important;
+  color: #e2e8f0 !important;
+  border-bottom: 1px solid #2a2f3a !important;
+}
+.leaflet-bar a:hover {
+  background-color: #2a2f3a !important;
+  color: #3b82f6 !important;
+}
+.leaflet-popup-content-wrapper {
+  background: #161a22 !important;
+  color: #e2e8f0 !important;
+  border: 1px solid #2a2f3a !important;
+  border-radius: 4px !important;
+  font-size: 11px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+.leaflet-popup-tip {
+  background: #161a22 !important;
+  border: 1px solid #2a2f3a !important;
+}
+.leaflet-tooltip {
+  background: #161a22 !important;
+  color: #e2e8f0 !important;
+  border: 1px solid #2a2f3a !important;
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
+  box-shadow: none !important;
+}

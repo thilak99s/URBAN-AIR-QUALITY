@@ -1,0 +1,213 @@
+{
+  "entities": {
+    "Ward": {
+      "title": "Ward",
+      "description": "A municipal administrative ward in Bengaluru",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the ward"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the ward"
+        },
+        "code": {
+          "type": "string",
+          "description": "Ward code, e.g., W-174"
+        },
+        "populationDensity": {
+          "type": "number",
+          "description": "Population density per sq km"
+        },
+        "hospitalsCount": {
+          "type": "number",
+          "description": "Number of hospitals inside the ward"
+        },
+        "schoolsCount": {
+          "type": "number",
+          "description": "Number of schools inside the ward"
+        },
+        "areaSqKm": {
+          "type": "number",
+          "description": "Total area of the ward in sq km"
+        },
+        "latitude": {
+          "type": "number",
+          "description": "Latitude of the ward centroid"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude of the ward centroid"
+        },
+        "aqi": {
+          "type": "number",
+          "description": "Current AQI of the ward"
+        }
+      },
+      "required": ["id", "name", "code", "latitude", "longitude"]
+    },
+    "CitizenComplaint": {
+      "title": "CitizenComplaint",
+      "description": "A pollution complaint reported by a citizen",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Complaint ID generated with format AQI-2026-XXXXXX"
+        },
+        "citizenName": {
+          "type": "string",
+          "description": "Name of the reporting citizen"
+        },
+        "citizenPhone": {
+          "type": "string",
+          "description": "Phone number of the citizen"
+        },
+        "wardId": {
+          "type": "string",
+          "description": "Target municipal ward ID"
+        },
+        "complaintType": {
+          "type": "string",
+          "description": "Type of pollution incident (e.g. Waste Burning, Construction Dust)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of the incident"
+        },
+        "latitude": {
+          "type": "number",
+          "description": "Exact coordinate latitude of the incident"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Exact coordinate longitude of the incident"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO timestamp of complaint submission"
+        },
+        "status": {
+          "type": "string",
+          "description": "Current status of the complaint",
+          "enum": ["Pending", "Dispatched", "Resolved", "Dismissed"]
+        },
+        "priority": {
+          "type": "string",
+          "description": "Severity priority of complaint",
+          "enum": ["low", "medium", "high"]
+        },
+        "assignedOfficer": {
+          "type": "string",
+          "description": "Name of the investigating KSPCB officer"
+        },
+        "evidenceUrl": {
+          "type": "string",
+          "description": "Optional image proof URL of pollution"
+        }
+      },
+      "required": ["id", "citizenName", "citizenPhone", "wardId", "complaintType", "description", "latitude", "longitude", "timestamp", "status"]
+    },
+    "EnforcementRecommendation": {
+      "title": "EnforcementRecommendation",
+      "description": "An automated enforcement dispatch ticket",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique task ID matching complaint ID"
+        },
+        "complaintId": {
+          "type": "string",
+          "description": "ID of corresponding citizen complaint"
+        },
+        "wardId": {
+          "type": "string",
+          "description": "Ward ID of the enforcement action"
+        },
+        "ward": {
+          "type": "string",
+          "description": "Ward name"
+        },
+        "priority": {
+          "type": "string",
+          "description": "Human priority rating",
+          "enum": ["Low", "Medium", "High"]
+        },
+        "priorityScore": {
+          "type": "number",
+          "description": "ML-evaluated priority score (0-100)"
+        },
+        "priorityLevel": {
+          "type": "string",
+          "description": "Normalized priority rating (low, medium, high)"
+        },
+        "reason": {
+          "type": "string",
+          "description": "Detailed reason or triggers for enforcement action"
+        },
+        "assignedOfficer": {
+          "type": "string",
+          "description": "Assigned inspector name"
+        },
+        "status": {
+          "type": "string",
+          "description": "Enforcement dispatch status",
+          "enum": ["Pending Inspection", "dispatched", "resolved", "dismissed"]
+        },
+        "deadline": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Deadline for inspector dispatch (24h default)"
+        },
+        "latitude": {
+          "type": "number",
+          "description": "Action target latitude"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Action target longitude"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation time of action record"
+        },
+        "suggestedAction": {
+          "type": "string",
+          "description": "Automated protocol recommendation"
+        },
+        "estimatedImpact": {
+          "type": "string",
+          "description": "Projected emission mitigation impact"
+        },
+        "inspectedAt": {
+          "type": "string",
+          "description": "Time the inspection actually took place"
+        },
+        "inspectionNotes": {
+          "type": "string",
+          "description": "Notes added by the inspector"
+        }
+      },
+      "required": ["id", "wardId", "priorityScore", "status", "deadline", "latitude", "longitude", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/wards/{wardId}": {
+      "schema": "Ward",
+      "description": "Verified municipal wards database"
+    },
+    "/pollution_complaints/{complaintId}": {
+      "schema": "CitizenComplaint",
+      "description": "Active citizen pollution complaints"
+    },
+    "/enforcement_queue/{recommendationId}": {
+      "schema": "EnforcementRecommendation",
+      "description": "Actionable priority dispatch queue for KSPCB inspectors"
+    }
+  }
+}
