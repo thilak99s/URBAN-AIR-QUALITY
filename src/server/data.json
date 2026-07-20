@@ -20802,144 +20802,144 @@
   "predictions": [
     {
       "id": "pr-w-1-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
       "wardId": "w-1",
-      "predictedAqi": 411,
-      "pm25Predicted": 147.7,
-      "pm10Predicted": 308.8,
+      "predictedAqi": 393,
+      "pm25Predicted": 138.8,
+      "pm10Predicted": 299.9,
       "category": "Hazardous / Severe",
-      "confidenceScore": 85
+      "confidenceScore": 86
     },
     {
       "id": "pr-w-2-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
       "wardId": "w-2",
-      "predictedAqi": 346,
-      "pm25Predicted": 124.4,
-      "pm10Predicted": 266.6,
+      "predictedAqi": 308,
+      "pm25Predicted": 112.7,
+      "pm10Predicted": 234.6,
       "category": "Hazardous / Severe",
-      "confidenceScore": 91
-    },
-    {
-      "id": "pr-w-3-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
-      "wardId": "w-3",
-      "predictedAqi": 309,
-      "pm25Predicted": 108.9,
-      "pm10Predicted": 238.3,
-      "category": "Hazardous / Severe",
-      "confidenceScore": 86
-    },
-    {
-      "id": "pr-w-4-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
-      "wardId": "w-4",
-      "predictedAqi": 179,
-      "pm25Predicted": 66,
-      "pm10Predicted": 135.3,
-      "category": "Poor",
       "confidenceScore": 89
     },
     {
-      "id": "pr-w-5-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
-      "wardId": "w-5",
-      "predictedAqi": 220,
-      "pm25Predicted": 78.7,
-      "pm10Predicted": 167.4,
-      "category": "Very Poor",
-      "confidenceScore": 88
-    },
-    {
-      "id": "pr-w-6-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
-      "wardId": "w-6",
-      "predictedAqi": 180,
-      "pm25Predicted": 67.2,
-      "pm10Predicted": 142,
-      "category": "Poor",
-      "confidenceScore": 90
-    },
-    {
-      "id": "pr-w-7-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
-      "wardId": "w-7",
-      "predictedAqi": 149,
-      "pm25Predicted": 54.9,
-      "pm10Predicted": 116.2,
-      "category": "Moderate / Unhealthy for Sensitive Groups",
-      "confidenceScore": 91
-    },
-    {
-      "id": "pr-w-8-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
-      "wardId": "w-8",
-      "predictedAqi": 238,
-      "pm25Predicted": 88.1,
-      "pm10Predicted": 184.7,
-      "category": "Very Poor",
-      "confidenceScore": 90
-    },
-    {
-      "id": "pr-w-9-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
-      "wardId": "w-9",
-      "predictedAqi": 268,
-      "pm25Predicted": 95.7,
-      "pm10Predicted": 205.3,
-      "category": "Very Poor",
-      "confidenceScore": 83
-    },
-    {
-      "id": "pr-w-10-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
-      "wardId": "w-10",
-      "predictedAqi": 257,
-      "pm25Predicted": 90.9,
-      "pm10Predicted": 194.5,
-      "category": "Very Poor",
-      "confidenceScore": 86
-    },
-    {
-      "id": "pr-w-11-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
-      "wardId": "w-11",
-      "predictedAqi": 204,
-      "pm25Predicted": 74.7,
-      "pm10Predicted": 157.3,
+      "id": "pr-w-3-2026-07-20",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
+      "wardId": "w-3",
+      "predictedAqi": 289,
+      "pm25Predicted": 101.2,
+      "pm10Predicted": 224.7,
       "category": "Very Poor",
       "confidenceScore": 82
     },
     {
+      "id": "pr-w-4-2026-07-20",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
+      "wardId": "w-4",
+      "predictedAqi": 187,
+      "pm25Predicted": 69.5,
+      "pm10Predicted": 142.6,
+      "category": "Poor",
+      "confidenceScore": 87
+    },
+    {
+      "id": "pr-w-5-2026-07-20",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
+      "wardId": "w-5",
+      "predictedAqi": 206,
+      "pm25Predicted": 74.1,
+      "pm10Predicted": 158.1,
+      "category": "Very Poor",
+      "confidenceScore": 87
+    },
+    {
+      "id": "pr-w-6-2026-07-20",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
+      "wardId": "w-6",
+      "predictedAqi": 191,
+      "pm25Predicted": 71.7,
+      "pm10Predicted": 151,
+      "category": "Poor",
+      "confidenceScore": 86
+    },
+    {
+      "id": "pr-w-7-2026-07-20",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
+      "wardId": "w-7",
+      "predictedAqi": 145,
+      "pm25Predicted": 54.2,
+      "pm10Predicted": 108.8,
+      "category": "Moderate / Unhealthy for Sensitive Groups",
+      "confidenceScore": 90
+    },
+    {
+      "id": "pr-w-8-2026-07-20",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
+      "wardId": "w-8",
+      "predictedAqi": 238,
+      "pm25Predicted": 86.4,
+      "pm10Predicted": 182.6,
+      "category": "Very Poor",
+      "confidenceScore": 91
+    },
+    {
+      "id": "pr-w-9-2026-07-20",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
+      "wardId": "w-9",
+      "predictedAqi": 242,
+      "pm25Predicted": 86.9,
+      "pm10Predicted": 188.3,
+      "category": "Very Poor",
+      "confidenceScore": 85
+    },
+    {
+      "id": "pr-w-10-2026-07-20",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
+      "wardId": "w-10",
+      "predictedAqi": 259,
+      "pm25Predicted": 93.3,
+      "pm10Predicted": 201.4,
+      "category": "Very Poor",
+      "confidenceScore": 92
+    },
+    {
+      "id": "pr-w-11-2026-07-20",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
+      "wardId": "w-11",
+      "predictedAqi": 182,
+      "pm25Predicted": 67.6,
+      "pm10Predicted": 144.4,
+      "category": "Poor",
+      "confidenceScore": 92
+    },
+    {
       "id": "pr-w-12-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
-      "forecastTime": "2026-07-21T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
+      "forecastTime": "2026-07-21T17:34:58.924Z",
       "wardId": "w-12",
-      "predictedAqi": 325,
-      "pm25Predicted": 117.2,
-      "pm10Predicted": 248.8,
-      "category": "Hazardous / Severe",
-      "confidenceScore": 83
+      "predictedAqi": 291,
+      "pm25Predicted": 106.6,
+      "pm10Predicted": 220.4,
+      "category": "Very Poor",
+      "confidenceScore": 91
     }
   ],
   "hotspots": [
     {
       "id": "hp-w-1-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-1",
-      "latitude": 13.027967488174715,
-      "longitude": 77.52025519958516,
+      "latitude": 13.028987947767371,
+      "longitude": 77.51850822199475,
       "riskLevel": "critical",
       "aqiValue": 412,
       "dominantPollutant": "PM10",
@@ -20947,10 +20947,10 @@
     },
     {
       "id": "hp-w-2-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-2",
-      "latitude": 12.934369628220958,
-      "longitude": 77.62509560780413,
+      "latitude": 12.934639271923402,
+      "longitude": 77.6253545933361,
       "riskLevel": "critical",
       "aqiValue": 319,
       "dominantPollutant": "PM10",
@@ -20958,10 +20958,10 @@
     },
     {
       "id": "hp-w-3-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-3",
-      "latitude": 12.970098656829228,
-      "longitude": 77.75054485098433,
+      "latitude": 12.969585930811162,
+      "longitude": 77.75045950304678,
       "riskLevel": "high",
       "aqiValue": 288,
       "dominantPollutant": "PM10",
@@ -20969,10 +20969,10 @@
     },
     {
       "id": "hp-w-4-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-4",
-      "latitude": 12.97258234190034,
-      "longitude": 77.64052872716209,
+      "latitude": 12.971103890539155,
+      "longitude": 77.64208838145899,
       "riskLevel": "medium",
       "aqiValue": 185,
       "dominantPollutant": "PM10",
@@ -20980,10 +20980,10 @@
     },
     {
       "id": "hp-w-5-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-5",
-      "latitude": 12.912258941835356,
-      "longitude": 77.6378859947877,
+      "latitude": 12.911393476194023,
+      "longitude": 77.63874428239328,
       "riskLevel": "high",
       "aqiValue": 205,
       "dominantPollutant": "PM10",
@@ -20991,10 +20991,10 @@
     },
     {
       "id": "hp-w-6-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-6",
-      "latitude": 13.002578340137363,
-      "longitude": 77.57083035664769,
+      "latitude": 13.003011789291383,
+      "longitude": 77.56985830560528,
       "riskLevel": "medium",
       "aqiValue": 178,
       "dominantPollutant": "PM10",
@@ -21002,10 +21002,10 @@
     },
     {
       "id": "hp-w-7-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-7",
-      "latitude": 12.930075320642674,
-      "longitude": 77.58306665776549,
+      "latitude": 12.931317503588268,
+      "longitude": 77.58433134951267,
       "riskLevel": "medium",
       "aqiValue": 144,
       "dominantPollutant": "PM10",
@@ -21013,10 +21013,10 @@
     },
     {
       "id": "hp-w-8-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-8",
-      "latitude": 13.035661966892786,
-      "longitude": 77.59809842997292,
+      "latitude": 13.03610289294878,
+      "longitude": 77.596826858115,
       "riskLevel": "high",
       "aqiValue": 237,
       "dominantPollutant": "PM10",
@@ -21024,10 +21024,10 @@
     },
     {
       "id": "hp-w-9-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-9",
-      "latitude": 13.033556517587959,
-      "longitude": 77.50176801106309,
+      "latitude": 13.033537960377323,
+      "longitude": 77.50186889112835,
       "riskLevel": "high",
       "aqiValue": 246,
       "dominantPollutant": "PM10",
@@ -21035,10 +21035,10 @@
     },
     {
       "id": "hp-w-10-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-10",
-      "latitude": 12.845225285738838,
-      "longitude": 77.65941397292694,
+      "latitude": 12.846159793432491,
+      "longitude": 77.65975850003817,
       "riskLevel": "high",
       "aqiValue": 240,
       "dominantPollutant": "PM10",
@@ -21046,10 +21046,10 @@
     },
     {
       "id": "hp-w-11-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-11",
-      "latitude": 12.985800190126819,
-      "longitude": 77.59738266532196,
+      "latitude": 12.986328315426723,
+      "longitude": 77.5980294061633,
       "riskLevel": "medium",
       "aqiValue": 191,
       "dominantPollutant": "PM10",
@@ -21057,10 +21057,10 @@
     },
     {
       "id": "hp-w-12-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-12",
-      "latitude": 12.957822054882264,
-      "longitude": 77.70031955655435,
+      "latitude": 12.956163506229556,
+      "longitude": 77.70061136506169,
       "riskLevel": "critical",
       "aqiValue": 307,
       "dominantPollutant": "PM10",
@@ -21070,7 +21070,7 @@
   "sourceAttributions": [
     {
       "id": "sa-w-1-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-1",
       "trafficContribution": 5,
       "constructionContribution": 24,
@@ -21082,7 +21082,7 @@
     },
     {
       "id": "sa-w-2-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-2",
       "trafficContribution": 12,
       "constructionContribution": 25,
@@ -21094,7 +21094,7 @@
     },
     {
       "id": "sa-w-3-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-3",
       "trafficContribution": 8,
       "constructionContribution": 25,
@@ -21106,7 +21106,7 @@
     },
     {
       "id": "sa-w-4-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-4",
       "trafficContribution": 24,
       "constructionContribution": 14,
@@ -21118,7 +21118,7 @@
     },
     {
       "id": "sa-w-5-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-5",
       "trafficContribution": 15,
       "constructionContribution": 57,
@@ -21130,7 +21130,7 @@
     },
     {
       "id": "sa-w-6-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-6",
       "trafficContribution": 16,
       "constructionContribution": 23,
@@ -21142,7 +21142,7 @@
     },
     {
       "id": "sa-w-7-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-7",
       "trafficContribution": 26,
       "constructionContribution": 32,
@@ -21154,7 +21154,7 @@
     },
     {
       "id": "sa-w-8-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-8",
       "trafficContribution": 11,
       "constructionContribution": 43,
@@ -21166,7 +21166,7 @@
     },
     {
       "id": "sa-w-9-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-9",
       "trafficContribution": 12,
       "constructionContribution": 25,
@@ -21178,7 +21178,7 @@
     },
     {
       "id": "sa-w-10-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-10",
       "trafficContribution": 14,
       "constructionContribution": 62,
@@ -21190,7 +21190,7 @@
     },
     {
       "id": "sa-w-11-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-11",
       "trafficContribution": 26,
       "constructionContribution": 42,
@@ -21202,7 +21202,7 @@
     },
     {
       "id": "sa-w-12-2026-07-20",
-      "timestamp": "2026-07-20T17:24:58.904Z",
+      "timestamp": "2026-07-20T17:34:58.924Z",
       "wardId": "w-12",
       "trafficContribution": 11,
       "constructionContribution": 25,
@@ -21233,8 +21233,8 @@
       "estimatedImpact": "high",
       "assignedOfficer": "Officer Priya Sharma",
       "status": "dispatched",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-21T16:13:28.224Z",
+      "inspectionNotes": "Preliminary site inspection completed. Found minor compliance issues that need addressing. Scheduled follow-up."
     },
     {
       "id": "rc-w-2-2026-07-20",
@@ -21255,8 +21255,8 @@
       "estimatedImpact": "high",
       "assignedOfficer": "Officer Priya Sharma",
       "status": "dispatched",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-22T17:19:58.899Z",
+      "inspectionNotes": "Detailed environmental audit conducted. All primary pollution control devices operational. Recommendations noted."
     },
     {
       "id": "rc-w-11-2026-07-20",
@@ -21277,8 +21277,8 @@
       "estimatedImpact": "high",
       "assignedOfficer": "Officer Priya Sharma",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-23T16:13:28.224Z",
+      "inspectionNotes": "Site visit performed. Observed moderate dust accumulation. Advised immediate wet mopping and covered storage."
     },
     {
       "id": "rc-w-3-2026-07-20",
@@ -21299,8 +21299,8 @@
       "estimatedImpact": "high",
       "assignedOfficer": "Officer Priya Sharma",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-23T16:13:28.224Z",
+      "inspectionNotes": "Routine inspection carried out. No major violations detected. Continuous monitoring recommended."
     },
     {
       "id": "rc-w-12-2026-07-20",
@@ -21321,8 +21321,8 @@
       "estimatedImpact": "high",
       "assignedOfficer": "Officer Priya Sharma",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-23T16:13:28.224Z",
+      "inspectionNotes": "Inspection team deployed. Identified areas for improvement in waste management protocols. Notice issued."
     },
     {
       "id": "rc-w-6-2026-07-20",
@@ -21343,8 +21343,8 @@
       "estimatedImpact": "high",
       "assignedOfficer": "Officer Priya Sharma",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-23T16:13:28.224Z",
+      "inspectionNotes": "Comprehensive assessment completed. Air quality monitoring equipment verified. Data logging confirmed operational."
     },
     {
       "id": "rc-w-5-2026-07-20",
@@ -21365,8 +21365,8 @@
       "estimatedImpact": "high",
       "assignedOfficer": "Officer Priya Sharma",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-23T16:13:28.224Z",
+      "inspectionNotes": "Field visit conducted. Community reported improvements in local air quality. Continued vigilance advised."
     },
     {
       "id": "rc-w-7-2026-07-20",
@@ -21385,10 +21385,10 @@
       },
       "suggestedAction": "Deploy periodic air quality monitoring vans and enforce sweeping of roads to reduce road dust.",
       "estimatedImpact": "medium",
-      "assignedOfficer": null,
+      "assignedOfficer": "Officer Meera Nair",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-21T16:13:28.224Z",
+      "inspectionNotes": "Random inspection performed. Found compliance within acceptable limits. Standard operating procedures followed."
     },
     {
       "id": "rc-w-8-2026-07-20",
@@ -21407,10 +21407,10 @@
       },
       "suggestedAction": "Dispatch municipal inspection teams to enforce anti-dust compliance: mandate 3-meter wind barriers, water-sprinkling hourly, and tarping of transport trucks.",
       "estimatedImpact": "high",
-      "assignedOfficer": null,
+      "assignedOfficer": "Officer Priya Sharma",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-21T16:13:28.224Z",
+      "inspectionNotes": "Preliminary site inspection completed. Found minor compliance issues that need addressing. Scheduled follow-up."
     },
     {
       "id": "rc-w-10-2026-07-20",
@@ -21429,10 +21429,10 @@
       },
       "suggestedAction": "Dispatch municipal inspection teams to enforce anti-dust compliance: mandate 3-meter wind barriers, water-sprinkling hourly, and tarping of transport trucks.",
       "estimatedImpact": "high",
-      "assignedOfficer": null,
+      "assignedOfficer": "Officer Rajesh Kumar",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-22T16:13:28.224Z",
+      "inspectionNotes": "Detailed environmental audit conducted. All primary pollution control devices operational. Recommendations noted."
     },
     {
       "id": "rc-w-4-2026-07-20",
@@ -21451,10 +21451,10 @@
       },
       "suggestedAction": "Deploy night-patrol marshals to hotspots. Impose immediate solid-waste burning fines under PCB sections and clear local landfill dumping grounds.",
       "estimatedImpact": "high",
-      "assignedOfficer": null,
+      "assignedOfficer": "Officer Amit Singh",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-23T16:13:28.224Z",
+      "inspectionNotes": "Site visit performed. Observed moderate dust accumulation. Advised immediate wet mopping and covered storage."
     },
     {
       "id": "rc-w-9-2026-07-20",
@@ -21473,10 +21473,10 @@
       },
       "suggestedAction": "Order stack-monitoring audits on high-emission metallurgical and dyeing units. Instruct mechanical sweepers to clean peripheral roads.",
       "estimatedImpact": "high",
-      "assignedOfficer": null,
+      "assignedOfficer": "Officer Sunita Patel",
       "status": "pending",
-      "inspectedAt": null,
-      "inspectionNotes": null
+      "inspectedAt": "2026-07-22T16:13:28.224Z",
+      "inspectionNotes": "Routine inspection carried out. No major violations detected. Continuous monitoring recommended."
     }
   ],
   "complaints": [
