@@ -15,9 +15,12 @@ import AQIMap from "./components/AQIMap.js";
 import ForecastChart from "./components/ForecastChart.js";
 import SourceAttributionCard from "./components/SourceAttributionCard.js";
 import EnforcementInspector from "./components/EnforcementInspector.js";
+import EnforcementQueue from "./components/EnforcementQueue.js";
 import CitizenPortal from "./components/CitizenPortal.js";
 import DataManagement from "./components/DataManagement.js";
+import DatasetManager from "./components/DatasetManager.js";
 import AnalystCenter from "./components/AnalystCenter.js";
+import ValidationAnalytics from "./components/ValidationAnalytics.js";
 import MapSearch from "./components/MapSearch.js";
 import GisTelemetryHud from "./components/GisTelemetryHud.js";
 import DatabaseManager from "./components/DatabaseManager.js";
@@ -797,35 +800,21 @@ export default function App() {
 
               {/* Tab 3: Enforcement prioritized actionable list */}
               {activeTab === "enforcement" && (
-                <EnforcementInspector 
+                <EnforcementQueue 
                   recommendations={allRecommendations} 
                   wards={wards} 
-                  userRole={currentUser?.role || UserRole.CITIZEN}
-                  userId={currentUser?.id || "unknown"}
                   onUpdateStatus={handleUpdateRecommendationStatus}
                 />
               )}
 
               {/* Tab 4: Validation Diagnostics Performance */}
               {activeTab === "analyst" && (
-                <AnalystCenter wards={wards} aqiRecords={allAqiRecords} />
+                <ValidationAnalytics />
               )}
 
               {/* Tab 5: Admin Datasets CRUD tracker */}
               {activeTab === "data" && (
-                <DataManagement 
-                  wards={wards} 
-                  aqiRecords={allAqiRecords}
-                  weatherRecords={allWeatherRecords}
-                  trafficRecords={allTrafficRecords}
-                  constructionRecords={allConstructionRecords}
-                  wasteBurningRecords={allWasteBurningRecords}
-                  industries={industries}
-                  onAddRecord={handleAddRecord}
-                  onUpdateRecord={handleUpdateRecord}
-                  onDeleteRecord={handleDeleteRecord}
-                  complaints={complaints}
-                />
+                <DatasetManager />
               )}
 
               {/* Tab 6: Centralized Database Manager */}
