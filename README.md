@@ -1,4 +1,4 @@
-# AirTrace AI 🌍💨
+# AI-Powered Urban Air Quality Intelligence for Smart City Intervention 🌍💨
 
 **An AI-powered Urban Air Quality Intelligence Platform** for detecting pollution hotspots, probabilistic source attribution, hyperlocal AQI forecasting, and automated enforcement recommendations.
 
